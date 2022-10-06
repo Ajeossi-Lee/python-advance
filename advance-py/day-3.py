@@ -1,7 +1,8 @@
 """
 类
+"""
 
-案例：
+# 案例：
 class DistinctError(ValueError):
     '''如果向DistinctDict添加重复值，则引发这个错误'''
 
@@ -25,9 +26,7 @@ d = DistinctDict()
 d['key'] = 'value'
 d['other_key'] = 'value'
 
-"""
 
-"""
 # Todo: ???
 # super
 class Mama:
@@ -39,6 +38,7 @@ class Sister(Mama):
         super().says()
         print('and clean your bedroom')
 
+"""
 super的简化形式(不传入任何参数)可以在方法内部使用，但super的使用并不限于方法
 在代码中需要调用给定实例的超类方法的任何地方都可以使用它
 不过，如果super不在方法内部使用，那么必须给出如下参数:
